@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #ffffff;
+    --bg-surface: #f8fafc;
+    --bg-card: #ffffff;
+    --border-subtle: #e2e8f0;
+    --border-strong: #0b1a30;
+    --text-primary: #0b1a30;
+    --text-muted: #53647b;
+    /* Cisco-inspired bridge blue and slate */
+    --cisco-blue: #049fd9;
+    --cisco-deep-blue: #005073;
+    --cisco-cyan: #00bceb;
+  }
+
+  .dark {
+    --bg-canvas: #070d17;
+    --bg-surface: #0b1524;
+    --bg-card: #0e1c31;
+    --border-subtle: #182c47;
+    --border-strong: #f8fafc;
+    --text-primary: #f0f6fc;
+    --text-muted: #8b9eb5;
+    --cisco-blue: #049fd9;
+    --cisco-deep-blue: #005073;
+    --cisco-cyan: #00bceb;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Subtle networking grid texture */
+.bg-subtle-grid {
+  background-image: 
+    linear-gradient(to right, rgba(4, 159, 217, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(4, 159, 217, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.dark .bg-subtle-grid {
+  background-image: 
+    linear-gradient(to right, rgba(4, 159, 217, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(4, 159, 217, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(4, 159, 217, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(4, 159, 217, 0.45);
+}
