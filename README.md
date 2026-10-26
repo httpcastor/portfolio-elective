@@ -39,7 +39,6 @@ My core focus lies in **Computer Networking**, **Hardware & Upgrade Support**, a
 This repository contains the source code for my personal portfolio web application built with **Vue 3** and **TypeScript**, showcasing my technical skills, networking tools (including a Subnet Calculator), and project background.
 
 ### Features
-* 🌓 **Dark / Light Mode Toggle:** Smooth theme switching.
 * 📱 **Responsive Design:** Fully optimized for desktop and mobile viewports.
 * 🧮 **Interactive Tools:** Built-in networking utilities (Subnet Calculator).
 * 📑 **Structured Showcase:** Comprehensive overview of background, qualifications, and project experiences.
