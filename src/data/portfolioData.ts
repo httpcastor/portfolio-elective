@@ -1,4 +1,5 @@
 import type { Project, NetworkCertification, SkillCategory, QuickFact } from '../types';
+import profilePic from '../assets/images/8018d25d-701d-4e1e-b892-9806c527b4ed.jpg';
 
 export const developerProfile = {
   name: 'Mark Anthony Castor',
@@ -10,7 +11,7 @@ export const developerProfile = {
   linkedin: 'https://www.linkedin.com/in/mark-anthony-castor-4291a0288/?isSelfProfile=true',
   location: 'Aparri, Cagayan, Philippines',
   statusTag: 'Aspiring Networking Engineer· Aparri, Cagayan',
-  profileImage: '/src/assets/images/8018d25d-701d-4e1e-b892-9806c527b4ed.jpg',
+  profileImage: profilePic,
   education: {
     degree: 'BS Computer Engineering (4th Year Standing)',
     institution: 'Cagayan State University – Carig Campus',
